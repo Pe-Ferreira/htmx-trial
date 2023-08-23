@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>htmx-trial</title>
+    </head>
+    <body>
+        <h1>Hello, HTMX</h1>
+        <div id="content">This content will be replaced if you click the below button:</div>
+        <button hx-get="http://localhost:8080/magic-button" hx-trigger="click" hx-target="#content" hx-swap="outerHTML">
+            Magic button
+        </button>
+        <script src="https://unpkg.com/htmx.org@1.9.4" integrity="sha384-zUfuhFKKZCbHTY6aRR46gxiqszMk5tcHjsVFxnUo8VMus4kHGVdIYVbOYYNlKmHV" crossorigin="anonymous"></script>
+    </body>
+</html>
